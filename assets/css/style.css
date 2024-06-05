@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1170px;
+}
+
+/* ==========header========== */
+a {
+  text-decoration: none;
+}
+.header {
+  width: 100%;
+  max-width: 1240px; /* Đặt giá trị tối đa cho độ rộng của header */
+  margin: 0 auto;
+}
+.header-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding: 24px 100px;
+}
+
+.logo {
+  margin-right: 20px;
+}
+
+.nav__list {
+  display: flex;
+  margin-top: 5px;
+  gap: 24px;
+  white-space: nowrap; /* Ngăn chữ trong các mục navbar bị xuống dòng */
+}
+
+.navbar__link {
+  color: #000;
+  font-family: Satoshi;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.input-search {
+  width: 557px;
+  height: 48px;
+  border-radius: 62px;
+  background: #f0f0f0;
+}
+
+.header__icon {
+  display: flex;
+  gap: 14px;
+}
+
+/* hero */
+.hero {
+  background: #f2f0f1;
+  height: 663px;
+}
+.hero__heading {
+}
