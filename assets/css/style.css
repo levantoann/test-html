@@ -5,7 +5,14 @@
 }
 
 .container {
-  width: 1170px;
+}
+
+body {
+  font-family: "Sora", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
 }
 
 /* ==========header========== */
@@ -13,10 +20,11 @@ a {
   text-decoration: none;
 }
 .header {
-  width: 100%;
-  max-width: 1240px; /* Đặt giá trị tối đa cho độ rộng của header */
+  width: 1240px;
   margin: 0 auto;
+  max-width: calc(100% - 48px);
 }
+
 .header-top {
   display: flex;
   align-items: center;
@@ -50,6 +58,7 @@ a {
   height: 48px;
   border-radius: 62px;
   background: #f0f0f0;
+  border: none;
 }
 
 .header__icon {
@@ -61,6 +70,400 @@ a {
 .hero {
   background: #f2f0f1;
   height: 663px;
+
+  display: flex;
+  justify-content: space-around;
+}
+.hero-content {
+  max-width: 577px;
+  margin-left: 100px;
 }
 .hero__heading {
+  padding-top: 103px;
+  color: #000;
+  font-family: "Integral CF";
+  font-size: 6.4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 6.4rem; /* 100% */
+}
+
+.hero__desc {
+  padding-top: 32px;
+  color: rgba(0, 0, 0, 0.6);
+  font-family: Satoshi;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px; /* 137.5% */
+}
+
+.hero__button {
+  margin-top: 32px;
+}
+.hero__button button {
+  border-radius: 62px;
+  background: #000;
+  color: #fff;
+  width: 210px;
+  height: 52px;
+  cursor: pointer;
+}
+
+.hero__button button:hover {
+  border: none;
+  opacity: 0.7;
+}
+
+.hero__cost {
+  display: flex;
+  margin-top: 48px;
+  gap: 32px;
+}
+
+.hero__cost--1 {
+  width: 141px;
+}
+
+.hero__cost--heading {
+  color: #000;
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.hero__cost--desc {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px; /* 137.5% */
+}
+
+.hero__span {
+  width: 1px;
+  font-size: 62px; /* Kích thước của dấu thanh ngang */
+  line-height: 1; /* Line height */
+  color: rgba(0, 0, 0, 0.1); /* Màu sắc của dấu thanh ngang */
+}
+
+.hero-media {
+  display: flex;
+  align-items: flex-end;
+}
+
+.hero__image-1 {
+  height: 660px;
+}
+
+.brand {
+  background-color: #000000;
+  height: 122px;
+}
+
+.brand__list {
+  display: flex;
+  row-gap: 106px;
+  justify-content: space-around;
+
+  padding: 44px 100px 44.84px 101.73px;
+}
+
+/* arial */
+
+.arial {
+  margin-top: 72px;
+  display: grid;
+  justify-content: center; /* căn giữa theo chiều ngang */
+  position: relative;
+}
+
+.arial__heading {
+  color: #000;
+  text-align: center;
+  font-family: "Integral CF";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.aria__list {
+  margin-top: 55px;
+  display: grid;
+  grid-template-columns: repeat(
+    4,
+    1fr
+  ); /* tạo ra 4 cột với chiều rộng bằng nhau */
+  gap: 20px; /* khoảng cách giữa các item */
+}
+
+.aria__item img {
+  width: 100%;
+  height: 298px;
+}
+
+.aria__item img:hover {
+  transition: 0.5s;
+  transform: scale(1.02);
+}
+
+.aria__item--title {
+  margin-top: 2px;
+  color: #000;
+  font-family: Satoshi;
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  width: 225px;
+}
+
+.aria__item--rating {
+  display: flex;
+  gap: 3px;
+  margin-top: 5px;
+}
+
+.aria__item--rating p {
+  margin-left: 2px;
+  color: #000;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.aria__item--rating span {
+  color: rgba(0, 0, 0, 0.6);
+  font-family: Satoshi;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.aria__price {
+  display: flex;
+  gap: 10px;
+}
+
+.aria__item--price {
+  color: #000;
+  font-family: Satoshi;
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.aria__item--price1 {
+  color: rgba(0, 0, 0, 0.4);
+  font-family: Satoshi;
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.aria__button {
+  margin-top: 51px;
+  display: flex;
+  justify-content: center;
+}
+
+.btn__arial {
+  width: 218px;
+  height: 52px;
+  border-radius: 62px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: #fff;
+  color: #000;
+  font-size: 1.6rem;
+  cursor: pointer;
+  margin-bottom: 64px;
+}
+
+.btn__arial:hover {
+  background: #000;
+  color: #fff;
+}
+
+.fa-solid,
+.fas {
+  color: #ffc633;
+}
+
+.horizontal-line {
+  position: absolute;
+  bottom: 0;
+  left: 50%; /* Đưa thanh ngang vào giữa */
+  transform: translateX(-50%); /* Đưa vị trí của thanh ngang về giữa */
+  width: 1240px; /* Chiều dài của thanh ngang */
+  border-top: 1px solid rgba(0, 0, 0, 0.1); /* Màu sắc của thanh ngang */
+}
+
+/* selling */
+
+.selling {
+  margin-top: 72px;
+  display: grid;
+  justify-content: center; /* căn giữa theo chiều ngang */
+  position: relative;
+}
+
+.selling__heading {
+  color: #000;
+  text-align: center;
+  font-family: "Integral CF";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.selling__list {
+  margin-top: 55px;
+  display: grid;
+  grid-template-columns: repeat(
+    4,
+    1fr
+  ); /* tạo ra 4 cột với chiều rộng bằng nhau */
+  gap: 20px; /* khoảng cách giữa các item */
+}
+
+.selling__item img {
+  width: 100%;
+  height: 298px;
+}
+
+.selling__item img:hover {
+  transition: 0.5s;
+  transform: scale(1.02);
+}
+
+.selling__item--title {
+  margin-top: 2px;
+  color: #000;
+  font-family: Satoshi;
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  width: 225px;
+}
+
+.selling__item--rating {
+  display: flex;
+  gap: 3px;
+  margin-top: 5px;
+}
+
+.selling__item--rating p {
+  margin-left: 2px;
+  color: #000;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.selling__item--rating span {
+  color: rgba(0, 0, 0, 0.6);
+  font-family: Satoshi;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.selling__price {
+  display: flex;
+  gap: 10px;
+}
+
+.selling__item--price {
+  color: #000;
+  font-family: Satoshi;
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.selling__item--price1 {
+  color: rgba(0, 0, 0, 0.4);
+  font-family: Satoshi;
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.selling__button {
+  margin-top: 51px;
+  display: flex;
+  justify-content: center;
+}
+
+.btn__selling {
+  width: 218px;
+  height: 52px;
+  border-radius: 62px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: #fff;
+  color: #000;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+.btn__selling:hover {
+  background: #000;
+  color: #fff;
+}
+
+/* ====dress==== */
+.dress {
+  margin-top: 80px;
+
+  display: flex;
+  justify-content: center;
+}
+
+.dress__container {
+  width: 1239px;
+  border-radius: 40px;
+  background: #f0f0f0;
+}
+
+.dress__heading {
+  margin-top: 70px;
+  color: #000;
+  text-align: center;
+  font-family: "Integral CF";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.dress__type1 {
+  margin-top: 30px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.dress__type2 {
+  margin-top: 15px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.dress__img:hover {
+  transform: scale(1.02);
+  transition: 0.5s;
 }
